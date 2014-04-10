@@ -1,4 +1,6 @@
-Code-Snippets-Application
-=========================
+Code Snippets Application
+===========================
 
-Code Snippets Application with AngularJS and Firebase
+Code Snippets Application
+
+To run: node scripts/web-server.js

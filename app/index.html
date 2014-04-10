@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="snipetsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Snippets</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/docs/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/bootstrap/docs/assets/css/bootstrap-responsive.css" />
+  </head>
+  <body>
+
+    <header data-ng-include="'views/header.html'" class="navbar navbar-fixed-top navbar-inverse ng-scope"></header>
+
+    <section class="content">
+      <section class="container">
+        <div ng-view></div>
+      </section>
+    </section>
+
+    <script src="http://static.firebase.com/v0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-fire/angularFire.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/controllers/header.js"></script>
+    <script src="js/controllers/add.js"></script>
+    <script src="js/controllers/list.js"></script>
+    <script src="js/controllers/details.js"></script>
+    <script src="js/services/snippets.js"></script>
+    <script src="js/filters/slug.js"></script>
+</body>
+</html>

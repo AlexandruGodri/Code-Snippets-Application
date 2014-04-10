@@ -1,0 +1,9 @@
+<div class="row" data-ng-controller="ListController">
+  <h2>Check out our amazing code snippets</h2>
+  <div class="list-group" data-ng-repeat="entry in snippetsList">
+    <a class="list-group-item active" href="#/details/{{entry.id}}">
+      <h4 class="list-group-item-heading">{{entry.author}}</h4>
+      <p class="list-group-item-text">{{entry.description | slug}}</p>
+    </a>
+  </div>
+</div>

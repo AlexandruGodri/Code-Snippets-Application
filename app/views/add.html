@@ -1,0 +1,22 @@
+<div class="row" data-ng-controller="AddController">
+  <div class="span6">
+    <form class="ng-pristine ng-valid">
+      <div class="control-group">
+        <label for="fAuthor">Author</label>
+        <input id="fAuthor" type="text" name="author" placeholder="Author" ng-model="author">
+      </div>
+      <div class="control-group">
+        <label for="fDescription">Description</label>
+        <input id="fDescription" type="text" name="description" placeholder="Description" ng-model="description">
+      </div>
+      <div class="control-group">
+        <label for="fCode">Code</label>
+        <textarea id="fCode" type="text" name="code" placeholder="Code" ng-model="code"></textarea>
+      </div>
+      <div class="control-group">
+        <button type="submit" class="btn btn-primary" ng-click="addSnippet()">Add snippet</button>
+      </div>
+    </form>
+    <div ng-show="err" class="error"><div class="alert alert-danger">{{err}}</div></div>
+  </div>
+</div>
